@@ -231,6 +231,13 @@ a {
 
 
 @media (max-width:640px){
+
+#offer-container{
+    height: 1.5rem;
+    padding: 1px;
+    gap: 20px;
+    font-size: small;
+}
     .slider-content{
      width: 100%;
      top: 8%;
@@ -248,4 +255,5 @@ a {
    margin-top: 8px;
    border-radius: 3px;
 }
+
 }
