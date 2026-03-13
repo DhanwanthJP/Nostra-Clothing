@@ -202,9 +202,6 @@ a {
     .navbar-menu{
         display: block;
     }
-}
-
-@media (max-width:780px){
     .slider-content{
      width: 100%;
      top: 8%;
@@ -218,8 +215,22 @@ a {
 }
 }
 
-
 @media (max-width:780px){
+    .slider-content{
+     width: 100%;
+     top: 8%;
+     gap: 4px;
+}
+.slider-content h1{
+    font-size: 2.5rem;
+}
+.slider-content h2{
+    font-size: 1.5rem;
+}
+}
+
+
+@media (max-width:640px){
     .slider-content{
      width: 100%;
      top: 8%;
