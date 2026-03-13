@@ -238,10 +238,16 @@ a {
     gap: 20px;
     font-size: small;
 }
+
+#navbar {
+    height: 3.5rem;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
     .slider-content{
      width: 100%;
      top: 8%;
-     gap: 4px;
+     gap: 2px;
 }
 .slider-content h1{
     font-size: 2rem;
