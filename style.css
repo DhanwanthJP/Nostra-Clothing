@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+
+:root {
+    --primary-color: #f8f5f0;
+    --secondary-color: #a68a5b;
+    --tertiary-color: #0e0e0e;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-main: "Cormorant", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Cormorant", serif;
+    text-decoration: n;
+    background-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Offer */
+#offer-container {
+    height: 2.5rem;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    width: 100vw;
+    padding: 2px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: larger;
+}
+
+#offer-close {
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+/* Main Navbar */
+#navbarContainer {
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#navbar {
+    display: flex;
+    height: 5rem;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 2rem;
+    flex: 1;
+}
+
+.navbar-menu{
+    display: none;
+}
+#navbar-s1 {
+    font-weight: 600;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    transition: var(--transition);
+}
+
+#navbar-s1:hover {
+    color: var(--secondary-color);
+}
+
+#navbar-s2 {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 2rem;
+    letter-spacing: 1px;
+}
+
+#navbar-s2 a {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#navbar-s2 a:hover {
+    color: var(--tertiary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#navbar-s3 {
+    display: flex;
+    gap: 2rem;
+}
+
+#mainContainer{
+    padding: 0px 1rem;
+}
+/*Slider*/
+
+.slider{   
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.slider-image-container{
+    display: flex;
+    transition: 2s;
+}
+
+.slider-image{
+    width: 100vw;
+}
+
+.slider-left{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+}
+
+.slider-left i{
+    font-size: 10vw;
+    
+}
+.slider-right{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+.slider-right i{
+    font-size: 10vw;
+}
+.slider-content{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     width: 100%;
+     top: 20%;
+     gap: 10px;
+}
+.slider-content button{
+    
+   padding: 10px 20px;
+   margin-top: 10px;
+   color: #1D232C;
+   cursor: pointer;
+   border-radius: 5px;
+   border: none;
+    /* width: 100%; */
+}
+.slider-content h1{
+    font-family: var(--font-main);
+    font-size: 6rem;
+}
+.slider-content h2{
+    font-size: 2rem;
+}
+
+
+
+@media (max-width:1280px) {
+    .slider-content{
+     width: 100%;
+     top: 15%;
+     gap: 6px;
+}
+.slider-content h1{
+    font-size: 4rem;
+}
+.slider-content h2{
+    font-size: 2rem;
+}
+}
+
+@media (max-width:860px){
+    #navbar-s2{
+        display:none;
+    }
+    .navbar-menu{
+        display: block;
+    }
+}
+
+@media (max-width:780px){
+    .slider-content{
+     width: 100%;
+     top: 8%;
+     gap: 5px;
+}
+.slider-content h1{
+    font-size: 3rem;
+}
+.slider-content h2{
+    font-size: 1.5rem;
+}
+}
+
+
+@media (max-width:780px){
+    .slider-content{
+     width: 100%;
+     top: 8%;
+     gap: 4px;
+}
+.slider-content h1{
+    font-size: 2rem;
+}
+.slider-content h2{
+    font-size: 1rem;
+}
+
+.slider-content button{  
+   padding: 5px 10px;
+   margin-top: 8px;
+   border-radius: 3px;
+}
+}
