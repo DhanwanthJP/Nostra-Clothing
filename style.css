@@ -15,7 +15,6 @@
 
 body {
     font-family: "Cormorant", serif;
-    text-decoration: n;
     background-color: var(--primary-color);
 }
 
@@ -53,6 +52,7 @@ a {
     display: flex;
     justify-content: center;
 }
+
 #navbar {
     display: flex;
     height: 5rem;
@@ -66,9 +66,10 @@ a {
     flex: 1;
 }
 
-.navbar-menu{
+.navbar-menu {
     display: none;
 }
+
 #navbar-s1 {
     font-weight: 600;
     font-size: 1.9rem;
@@ -107,12 +108,13 @@ a {
     gap: 2rem;
 }
 
-#mainContainer{
+#mainContainer {
     padding: 0px 1rem;
 }
+
 /*Slider*/
 
-.slider{   
+.slider {
     display: flex;
     width: 100%;
     position: relative;
@@ -121,35 +123,38 @@ a {
 
 }
 
-.slider-image-container{
+.slider-image-container {
     display: flex;
     transition: 2s;
 }
 
-.slider-image{
+.slider-image {
     width: 100vw;
 }
 
-.slider-left{
+.slider-left {
     position: absolute;
     top: 35%;
     left: 5%;
     z-index: 1;
 }
 
-.slider-left i{
+.slider-left i {
     font-size: 10vw;
-    
+
 }
-.slider-right{
+
+.slider-right {
     position: absolute;
     top: 35%;
     right: 5%;
 }
-.slider-right i{
+
+.slider-right i {
     font-size: 10vw;
 }
-.slider-content{
+
+.slider-content {
     position: absolute;
     color: white;
     display: flex;
@@ -157,109 +162,130 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-     width: 100%;
-     top: 20%;
-     gap: 10px;
+    width: 100%;
+    top: 20%;
+    gap: 10px;
 }
-.slider-content button{
-    
-   padding: 10px 20px;
-   margin-top: 10px;
-   color: #1D232C;
-   cursor: pointer;
-   border-radius: 5px;
-   border: none;
+
+.slider-content button {
+
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #1D232C;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
     /* width: 100%; */
 }
-.slider-content h1{
+
+.slider-content h1 {
     font-family: var(--font-main);
     font-size: 6rem;
 }
-.slider-content h2{
+
+.slider-content h2 {
     font-size: 2rem;
 }
 
 
 
 @media (max-width:1280px) {
-    .slider-content{
-     width: 100%;
-     top: 15%;
-     gap: 6px;
-}
-.slider-content h1{
-    font-size: 4rem;
-}
-.slider-content h2{
-    font-size: 2rem;
-}
+    .slider-content {
+        width: 100%;
+        top: 15%;
+        gap: 6px;
+    }
+
+    .slider-content h1 {
+        font-size: 4rem;
+    }
+
+    .slider-content h2 {
+        font-size: 2rem;
+    }
 }
 
-@media (max-width:860px){
-    #navbar-s2{
-        display:none;
+@media (max-width:860px) {
+    #navbar-s2 {
+        display: none;
     }
-    .navbar-menu{
+
+    .navbar-menu {
         display: block;
     }
-    .slider-content{
-     width: 100%;
-     top: 8%;
-     gap: 5px;
-}
-.slider-content h1{
-    font-size: 3rem;
-}
-.slider-content h2{
-    font-size: 1.5rem;
-}
+
+    .slider-content {
+        width: 100%;
+        top: 8%;
+        gap: 5px;
+    }
+
+    .slider-content h1 {
+        font-size: 3rem;
+    }
+
+    .slider-content h2 {
+        font-size: 1.5rem;
+    }
 }
 
-@media (max-width:780px){
-    .slider-content{
-     width: 100%;
-     top: 8%;
-     gap: 4px;
-}
-.slider-content h1{
-    font-size: 2.5rem;
-}
-.slider-content h2{
-    font-size: 1.5rem;
-}
+@media (max-width:780px) {
+    .slider-content {
+        width: 100%;
+        top: 8%;
+        gap: 4px;
+    }
+
+    .slider-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .slider-content h2 {
+        font-size: 1.5rem;
+    }
 }
 
 
-@media (max-width:640px){
+@media (max-width:640px) {
 
-#offer-container{
-    height: 1.5rem;
-    padding: 1px;
-    gap: 20px;
-    font-size: small;
-}
+    #offer-container {
+        height: 1.5rem;
+        padding: 1px;
+        gap: 20px;
+        font-size: small;
+    }
 
-#navbar {
-    height: 3.5rem;
-    gap: 1.5rem;
-    padding: 0 1.5rem;
-}
-    .slider-content{
-     width: 100%;
-     top: 8%;
-     gap: 2px;
-}
-.slider-content h1{
-    font-size: 2rem;
-}
-.slider-content h2{
-    font-size: 1rem;
+    #navbar {
+        height: 3rem;
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+    #navbar-s1{
+        font-size: 1.5rem;
+    }
+
+    #mainContainer {
+    padding: 0px 0.5rem;
 }
 
-.slider-content button{  
-   padding: 5px 10px;
-   margin-top: 8px;
-   border-radius: 3px;
-}
+    .slider-content {
+        width: 100%;
+        top: 8%;
+        gap: 2px;
+    }
+
+    .slider-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .slider-content h2 {
+        font-size: 0.8rem;
+    }
+
+    .slider-content button {
+        padding: 5px 10px;
+        margin-top: 8px;
+        border-radius: 3px;
+    }
 
 }
