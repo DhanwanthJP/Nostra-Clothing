@@ -5,6 +5,26 @@ offer_close.onclick = () => {
   offer_container.style.display = "none";
 };
 
+// Nav
+const navbar_menu = document.getElementById("navbar-menu-icon");
+
+
+
+// SideNav
+const sideNav = document.getElementById("sideNav");
+const sideNav_close = document.getElementById("sideNav-close");
+navbar_menu.addEventListener("click", function(){
+    sideNav.style.marginLeft = "0%";
+})
+
+sideNav_close.addEventListener("click", function(){
+    sideNav.style.marginLeft = "-50%";
+})
+
+// 
+
+// 
+
 // Slider
 var sliderleft = document.getElementById("slider-left-icon");
 var sliderright = document.getElementById("slider-right-icon");
