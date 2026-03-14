@@ -117,9 +117,9 @@ a {
     left: 0;
    background-color: var(--primary-color); 
    transition-property: all;
-   transition-duration: 200ms;
- 
-   transition-timing-function: linear;
+   transition-duration: 300ms;
+    
+   transition-timing-function: ease-in-out;
 }
 #sideNav-s1{
     display: flex;
@@ -181,24 +181,18 @@ a {
 
 .slider-left {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 5%;
     z-index: 1;
 }
-
-.slider-left i {
-    font-size: 10vw;
-
+.slider-left img,.slider-right img{
+    width: 6vw;
 }
 
 .slider-right {
     position: absolute;
-    top: 35%;
+    top: 40%;
     right: 5%;
-}
-
-.slider-right i {
-    font-size: 10vw;
 }
 
 .slider-content {

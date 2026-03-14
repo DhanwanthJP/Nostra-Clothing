@@ -26,8 +26,8 @@ sideNav_close.addEventListener("click", function(){
 // 
 
 // Slider
-var sliderleft = document.getElementById("slider-left-icon");
-var sliderright = document.getElementById("slider-right-icon");
+var sliderleft = document.querySelector(".slider-left img");
+var sliderright = document.querySelector(".slider-right img");
 var sliderimage = document.querySelector(".slider-image-container");
 var slidermargin = 0;
 
