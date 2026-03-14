@@ -6,7 +6,7 @@ offer_close.onclick = () => {
 };
 
 // Nav
-const navbar_menu = document.getElementById("navbar-menu-icon");
+const navbar_menu = document.getElementById("navbar-menu");
 
 
 
