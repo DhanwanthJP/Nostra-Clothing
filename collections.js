@@ -7,7 +7,7 @@ products.forEach((product)=>{
     createItem.innerHTML=` <div class="products-s1"><img src="${product.src}"></div>
                 <div class="products-s2"><h1>${product.name}</h1>
                 <p>₹${product.price}</p></div>
-                <tags style="visibility:hidden;">${product.tags}</tags>`
+                <span class="tags" style="display:none;">${product.tags}</span>`
 
     product_container.append(createItem)
 })
@@ -35,11 +35,11 @@ tags.forEach((tag)=>{
 
 // Search Functionality
 var search = document.getElementById("search");
-var productList = product_container.querySelectorAll("div");
+var productList = product_container.querySelectorAll(".product");
 
 console.log(productList);
 
-search.addEventListener("keyup", function () {
+search.addEventListener("keyup", function (event) {
   var enteredValue = event.target.value.toUpperCase();
 
   for (var count = 0; count < productList.length; count++) {
@@ -59,7 +59,7 @@ function update()
         var check = false
         var product=productList[i]
         console.log(product)
-        var temp=product.querySelector("tags").innerHTML
+        var temp=product.querySelector(".tags").innerHTML
        
         console.log("elemen"+temp)
         
