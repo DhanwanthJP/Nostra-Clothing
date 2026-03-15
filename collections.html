@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nostra</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="collections.css">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 
 <body>
@@ -32,7 +35,7 @@
     </div>
 
     <!-- Navbar Section -->
-    <nav id="navbarContainer">
+    <nav id="navbarContainer-collections">
         <div id="navbar">
             <div id="navbar-menu">
                 <i id="navbar-menu-icon" class="fa-solid fa-bars fa-lg"></i>
@@ -44,11 +47,12 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="#">NEW ARRIVAL</a></li>
                 <li><a href="#">MOST WANTED</a></li>
-                <li><a href="collections.html"><span style="color: var(--tertiary-color);border-bottom: 1px solid var(--secondary-color);">COLLECTIONS</span></a></li>
+                <li><a href="collections.html"><span
+                            style="color: var(--tertiary-color);border-bottom: 1px solid var(--secondary-color);">COLLECTIONS</span></a>
+                </li>
                 <li><a href="contact.html">CONTACT US</a></li>
             </ul>
             <div id="navbar-s3">
-                <i class="fa-solid fa-magnifying-glass fa-lg" style="color: rgb(14, 14, 14)"></i>
                 <i class="fa-solid fa-heart fa-lg" style="color: rgb(14, 14, 14)"></i>
                 <i class="fa-solid fa-bag-shopping fa-lg" style="color: rgb(14, 14, 14)"></i>
             </div>
@@ -58,24 +62,82 @@
     <!-- Side Nav -->
     <nav id="sideNav" style="width: 40%;height: 100vh;margin-left: -50%;">
         <div id="sideNav-s1">
-        <a href="./index.html"><h3>NOSTRA</h3></a>
-        <i id="sideNav-close" class="fa-solid fa-xmark" style="color: rgb(0, 0, 0)"></i>
+            <a href="./index.html">
+                <h3>NOSTRA</h3>
+            </a>
+            <i id="sideNav-close" class="fa-solid fa-xmark" style="color: rgb(0, 0, 0)"></i>
         </div>
         <ul id="sideNav-list">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#">NEW ARRIVAL</a></li>
             <li><a href="#">MOST WANTED</a></li>
-            <li><a href="collections.html"><span style="color: var(--tertiary-color);border-bottom: 1px solid var(--secondary-color);">COLLECTIONS</span></a></li>
+            <li><a href="collections.html"><span
+                        style="color: var(--tertiary-color);border-bottom: 1px solid var(--secondary-color);">COLLECTIONS</span></a>
+            </li>
             <li><a href="contact.html">CONTACT US</a></li>
         </ul>
     </nav>
-
-    <div id="mainContainer">
-        
-
-
+    <!-- Search -->
+    <div class="search-container">
+        <form class="search-products">
+            <i class="fa-solid fa-magnifying-glass fa-sm" style="color: rgb(158, 152, 144);"></i>
+            <input id="search" type="search" placeholder="Search products">
+        </form>
     </div>
 
+    <!-- Products section -->
+    <div class="collectionsContainer">
+        <!-- Filter -->
+        <div class="filter-section">
+            <h3 class="filter-section-occasion filter-subheading">Occasion</h3>
+            <div>
+                <input type="checkbox" name="tags" value="summer"> <label for="summer">Summer</label><br>
+                <input type="checkbox" name="tags" value="party"> <label for="party">Party</label> <br>
+                <input type="checkbox" name="tags" value="beach"> <label for="beach">Beach</label>
+            </div>
+            <h3 class="filter-section-colors filter-subheading"> Colors </h3>
+            <div>
+                <input type="checkbox" name="tags" value="red"> <label for="red">Red</label> <br>
+                <input type="checkbox" name="tags" value="blue"> <label for="blue">Blue</label> <br>
+                <input type="checkbox" name="tags" value="white"> <label for="white">White</label> <br>
+                <input type="checkbox" name="tags" value="green"> <label for="green">Green</label>
+            </div>
+            <h3 class="filter-section-arrivals filter-subheading"> Arrivals </h3>
+            <div>
+                <input type="checkbox" name="tags" value="new"> <label for="new">New</label> <br>
+                <input type="checkbox" name="tags" value="old"> <label for="old">Old</label>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div class="product-container">
+            <!-- <div class="products">
+                <div class="products-s1"><img src="./images/products/p1.png"></div>
+                <div class="products-s2"><h1>Shirt</h1>
+                <p>₹100</p></div>
+                <tags style="visibility:hidden;">new,blue,summer</tags>
+            </div>
+            <div class="products">
+                <div class="products-s1"><img src="./images/products/p1.png"></div>
+                <div class="products-s2"><h1>Shirt</h1>
+                <p>₹100</p></div>
+                <tags style="visibility:hidden;">new,blue,summer</tags>
+            </div>
+            <div class="products">
+                <div class="products-s1"><img src="./images/products/p1.png"></div>
+                <div class="products-s2"><h1>Shirt</h1>
+                <p>₹100</p></div>
+                <tags style="visibility:hidden;">new,blue,summer</tags>
+            </div>
+            <div class="products">
+                <div class="products-s1"><img src="./images/products/p1.png"></div>
+                <div class="products-s2"><h1>Shirt</h1>
+                <p>₹100</p></div>
+                <tags style="visibility:hidden;">new,blue,summer</tags>
+            </div> -->
+        </div>
+
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -122,7 +184,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>© 2025 Nostra.com — All rights reserved</p>
+                <p>&copy; 2025 Nostra.com — All rights reserved</p>
                 <div class="footer-payment">
                     <span>VISA</span><span>MASTERCARD</span><span>PAYPAL</span><span>STRIPE</span>
                 </div>
@@ -131,6 +193,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="module" src="collections.js"></script>
 </body>
 
 </html>

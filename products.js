@@ -1,0 +1,105 @@
+const products = [
+  {
+    id: 1,
+    name: "High-Shine Navy Satin",
+    src: "products/p1.png",
+    desc: "",
+    price: 899,
+    tags: ["new", "blue", "party"],
+  },
+
+  {
+    id: 2,
+    name: "Gold Sequin-Accented White Cotton",
+    src: "products/p2.png",
+    desc: "",
+    price: 899,
+    tags: ["new", "white", "party"],
+  },
+
+  {
+    id: 3,
+    name: "Luxurious Black Velvet",
+    src: "products/p3.png",
+    desc: "",
+    price: 899,
+    tags: ["new", "black", "party"],
+  },
+
+  {
+    id: 4,
+    name: "Shimmering Silver Lame",
+    src: "products/p4.png",
+    desc: "",
+    price: 899,
+    tags: ["old", "white", "party"],
+  },
+  {
+    id: 5,
+    name: "Striped Crewneck T-Shirt",
+    src: "products/p5.png",
+    desc: "",
+    price: 899,
+    tags: ["old", "blue", "summer"],
+  },
+  ,
+  {
+    id: 6,
+    name: "Linen V-Neck Pocket T-Shirt",
+    src: "products/p6.png",
+    desc: "",
+    price: 899,
+    tags: ["old", "white", "summer"],
+  },
+
+  {
+    id: 7,
+    name: "Scoop-Neck T-Shirt",
+    src: "products/p7.png",
+    desc: "",
+    price: 899,
+    tags: ["new", "red", "summer"],
+  },
+  {
+    id: 8,
+    name: "Sunset Graphic T-Shirt",
+    src: "products/p8.png",
+    desc: "",
+    price: 899,
+    tags: ["new", "blue", "summer"],
+  },
+  {
+    id: 9,
+    name: "High-Shine Navy Satin",
+    src: "products/p9.png",
+    desc: "",
+    price: 899,
+    tags: ["new", "blue", "beach"],
+  },
+  {
+    id: 10,
+    name: "High-Shine Navy Satin",
+    src: "products/p10.png",
+    desc: "",
+    price: 899,
+    tags: ["new", "green", "beach"],
+  },
+  {
+    id: 11,
+    name: "Delicate White Linen",
+    src: "products/p11.png",
+    desc: "",
+    price: 899,
+    tags: ["new", "white", "beach"],
+  },
+  {
+    id: 12,
+    name: "Navy Hawaiian",
+    src: "products/p12.png",
+    desc: "",
+    price: 899,
+    tags: ["new","blue","green", "beach"],
+  },
+];
+
+export { products };
