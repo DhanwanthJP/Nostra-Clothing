@@ -37,8 +37,6 @@ tags.forEach((tag)=>{
 var search = document.getElementById("search");
 var productList = product_container.querySelectorAll(".product");
 
-console.log(productList);
-
 search.addEventListener("keyup", function (event) {
   var enteredValue = event.target.value.toUpperCase();
 
@@ -60,15 +58,9 @@ function update()
         var product=productList[i]
         console.log(product)
         var temp=product.querySelector(".tags").innerHTML
-       
-        console.log("elemen"+temp)
-        
 
         const tempFilterArray = temp.split(',');
-        
-        console.log("tempfilterarray"+tempFilterArray)
-        console.log("filterlist"+filterList)
-       
+  
             filterList.forEach((j)=>{
                 tempFilterArray.forEach((i)=>{
                 if(j==i)
@@ -78,17 +70,12 @@ function update()
             })
         })
 
-
         if(!check && filterList.length>0)
         {
             product.style.display="none"
         }
         else{
             product.style.display="block"
-        }
-
-        
+        }      
     };
-
-
 }
