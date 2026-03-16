@@ -6,7 +6,7 @@ products.forEach((product)=>{
     createItem.classList.add("product")
     createItem.innerHTML=` <div class="products-s1"><img src="${product.src}"></div>
                 <div class="products-s2"><h1>${product.name}</h1>
-                <p>₹${product.price}</p></div>
+                <p class="product-price">₹${product.price}</p></div>
                 <span class="tags" style="display:none;">${product.tags}</span>`
 
     product_container.append(createItem)
